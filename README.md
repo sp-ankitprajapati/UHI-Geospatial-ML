@@ -10,7 +10,7 @@ A comprehensive 7-year geospatial analysis of the Urban Heat Island (UHI) effect
 
 ## 🛠️ Tech Stack & Tools
 * **Languages:** Python
-* **Machine Learning:** Scikit-learn (Random Forest Regressor)
+* **Machine Learning:** Scikit-learn (Random Forest Classifier)
 * **Geospatial Tools:** QGIS, GDAL
 * **Data Processing:** Pandas, NumPy
 * **Dataset:** Landsat 8 Satellite Imagery (Temporal data covering 7 years)
