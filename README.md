@@ -16,8 +16,8 @@ A comprehensive 7-year geospatial analysis of the Urban Heat Island (UHI) effect
 * **Dataset:** Landsat 8 Satellite Imagery (Temporal data covering 7 years)
 
 ## 📂 Dataset Access
-Due to the large size of the raw Landsat 8 satellite imagery (8 GB), the full dataset is hosted externally. 
-* [Kaggle Dataset] https://www.kaggle.com/datasets/iith25ankit/urban-heat-island-uhi-analysis
+Due to the large size of the raw Landsat 8 satellite imagery (8 GB), the full dataset is hosted on
+* [Kaggle Dataset](https://www.kaggle.com/datasets/iith25ankit/urban-heat-island-uhi-analysis)
 * A small pre-processed sample dataset is available in the `/data` directory for code testing.
 
 ## ⚙️ Methodology
