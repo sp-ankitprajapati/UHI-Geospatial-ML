@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyderabad-uhi"
+version = "0.2.0"
+description = "Reproducible two-scene Landsat land-cover and surface-temperature analysis"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0,<3", "pandas>=2.2,<4", "scikit-learn>=1.5,<2",
+  "scipy>=1.13,<2", "rasterio>=1.4,<2", "geopandas>=1.0,<2",
+  "pyogrio>=0.9,<1", "matplotlib>=3.9,<4", "joblib>=1.4,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+uhi = "uhi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+uhi = ["input_files.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

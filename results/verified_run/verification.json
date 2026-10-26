@@ -1,0 +1,8 @@
+{
+  "pytest_cases_passed": 21,
+  "full_cli_run": "passed",
+  "package_editable_install": "passed",
+  "offline_sample_evaluation_matches_full_run_exactly": true,
+  "cached_fetch_checksum_verification_files": 35,
+  "remote_ci": "not_yet_observed"
+}
