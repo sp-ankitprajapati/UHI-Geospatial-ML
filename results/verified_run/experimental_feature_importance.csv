@@ -1,0 +1,15 @@
+year,feature,impurity_importance,caution
+2016,blue,0.19651828652822353,Training impurity importance is biased and does not establish temperature drivers
+2016,green,0.1457738310029356,Training impurity importance is biased and does not establish temperature drivers
+2016,red,0.12797752806513876,Training impurity importance is biased and does not establish temperature drivers
+2016,nir,0.12237837968746793,Training impurity importance is biased and does not establish temperature drivers
+2016,swir1,0.10952351027808369,Training impurity importance is biased and does not establish temperature drivers
+2016,ndvi,0.17498051430707418,Training impurity importance is biased and does not establish temperature drivers
+2016,ndbi,0.12284795013107631,Training impurity importance is biased and does not establish temperature drivers
+2022,blue,0.21464895878174328,Training impurity importance is biased and does not establish temperature drivers
+2022,green,0.10388841254787025,Training impurity importance is biased and does not establish temperature drivers
+2022,red,0.12199193324676014,Training impurity importance is biased and does not establish temperature drivers
+2022,nir,0.1019239834057194,Training impurity importance is biased and does not establish temperature drivers
+2022,swir1,0.20501678765218523,Training impurity importance is biased and does not establish temperature drivers
+2022,ndvi,0.1497742082511796,Training impurity importance is biased and does not establish temperature drivers
+2022,ndbi,0.1027557161145422,Training impurity importance is biased and does not establish temperature drivers

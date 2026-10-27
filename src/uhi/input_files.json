@@ -1,0 +1,216 @@
+{
+  "dataset": "iith25ankit/urban-heat-island-uhi-analysis",
+  "version": 1,
+  "files": [
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_MTL.json",
+      "bytes": 14439,
+      "sha256": "713b1020088c6e2a3c231067baed0c01e6a331715818b4409b03a429c2f92af6",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_MTL.json"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_QA_PIXEL.TIF",
+      "bytes": 372729,
+      "sha256": "310019bf5733c51cc90731a4092311b1f150680db742f2fc984e427fb2c7032c",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_QA_PIXEL.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_QA_RADSAT.TIF",
+      "bytes": 231990,
+      "sha256": "5f1f83ed2b54fcb38cad6fe3ac7b59831d39e81a2824f94a503fa7579b3a9441",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_QA_RADSAT.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B2.TIF",
+      "bytes": 86062492,
+      "sha256": "247d922b86faf2324d2f7ed16fc62859640dd91944311a07c52d0fa7eaa602cf",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B2.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B3.TIF",
+      "bytes": 88892833,
+      "sha256": "720717a5e142a674b89c2e9388efbe9280f83f8f7e93a2b68f2c59020f3705fd",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B3.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B4.TIF",
+      "bytes": 92698371,
+      "sha256": "c9557180b978d7840a95bf7d5e7d21025b270c88667be58ceded1a0f91f3a1e8",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B4.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B5.TIF",
+      "bytes": 94178022,
+      "sha256": "cf1e05aa15d3583512b21392c3d336f847c0cb3d1848abf49e57c19211da9caa",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B5.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B6.TIF",
+      "bytes": 96285279,
+      "sha256": "b3b3999810e614c2cd56c92bad1cf4cc41e011af3aa4361a10cd9c88fa5d7a86",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_SR_B6.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_ST_B10.TIF",
+      "bytes": 84586533,
+      "sha256": "94611998e84b0d64bcefe741ed816940e111a00a56f2fd04baec48f49a385c5e",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_ST_B10.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_ST_QA.TIF",
+      "bytes": 23027135,
+      "sha256": "e7a713875295ccca10f36a55bdde4661e824b77a8da82dbf82d2342506a0c27e",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20160523_20200906_02_T1/LC08_L2SP_144048_20160523_20200906_02_T1_ST_QA.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_MTL.json",
+      "bytes": 18714,
+      "sha256": "cb55891589e69701f4235d2330009eb22a74710c092dc56be5ecd942fc3fe45b",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_MTL.json"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_QA_PIXEL.TIF",
+      "bytes": 487708,
+      "sha256": "0e8835ebe4e9227cdb1c58e3fc7883234ce734018d2742d10655473b808e98ce",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_QA_PIXEL.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_QA_RADSAT.TIF",
+      "bytes": 232431,
+      "sha256": "405391b6a1dc8f783509ca1cd9fad54834a7ca92e5c83d0432d9395691e19586",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_QA_RADSAT.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B2.TIF",
+      "bytes": 86224138,
+      "sha256": "83e58b5117fdd8144c5d38e5ee064fff92b054ce0c5ec01ac75fedb3b68d899d",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B2.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B3.TIF",
+      "bytes": 88509805,
+      "sha256": "ce0293e5cd1b987cfe57dfdc721c749df931be9674359b6edd0d1ee93719af7f",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B3.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B4.TIF",
+      "bytes": 92522539,
+      "sha256": "3786ccd0196a16a56418d8bc0b583a57b4a546ccb59654aa98010bb697943bad",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B4.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B5.TIF",
+      "bytes": 94033753,
+      "sha256": "6ab218262450f98596f8da015a9467dcb4a2c8dbdaf17bd01111919709658bc5",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B5.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B6.TIF",
+      "bytes": 96393795,
+      "sha256": "02862a7ab841240c67b4909d46916c9c69ca454a190e30c98c22ea2eaef86c56",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_SR_B6.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_ST_B10.TIF",
+      "bytes": 87419599,
+      "sha256": "de22c28c285011e1ddd9685fbd2ca7062cdad0f50bfb1ae4f37f018cf1a4777e",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_ST_B10.TIF"
+    },
+    {
+      "path": "data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_ST_QA.TIF",
+      "bytes": 27627233,
+      "sha256": "cdf7529aac00fb14cd22b02af397cb9f618dba0df1dba892e3b094780df7e291",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/data_raw_bands/LC08_L2SP_144048_20220524_20220602_02_T1/LC08_L2SP_144048_20220524_20220602_02_T1_ST_QA.TIF"
+    },
+    {
+      "path": "processed/Clipped_LST_2016.tif",
+      "bytes": 4903806,
+      "sha256": "099be5994810e569feffb500307e5ccf1e001d9dfe1f4797ddaa39c377c42110",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Clipped_LST_2016.tif"
+    },
+    {
+      "path": "processed/Clipped_LST_2022.tif",
+      "bytes": 4903806,
+      "sha256": "05ae06db6d7ca2dbb72d5eca3b36e0c47de3a9999c1110a74c448baf09095a1b",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Clipped_LST_2022.tif"
+    },
+    {
+      "path": "processed/LULC_FINAL_2016.tif",
+      "bytes": 60274139,
+      "sha256": "dae67a687a207746f1cf8f6fd0578b7581296860ac6966bc3956b0560473dd3c",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/LULC_FINAL_2016.tif"
+    },
+    {
+      "path": "processed/LULC_FINAL_2022.tif",
+      "bytes": 60274139,
+      "sha256": "f6126c530a5474bfff47383a371c65193f9ee19e3862bff30e0f58f91ba3f9f6",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/LULC_FINAL_2022.tif"
+    },
+    {
+      "path": "processed/training_2016_fixed1.csv",
+      "bytes": 7969,
+      "sha256": "7280c9ae9287ad09cc9392e932097c749b251d269b6c36fcae53ecde57695949",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/training_2016_fixed1.csv"
+    },
+    {
+      "path": "processed/Training_2016_Fixed1.dbf",
+      "bytes": 4361,
+      "sha256": "1967568cc3c0f911786f6a4255de2eb353ab790053147fbdba65addf29694c38",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_2016_Fixed1.dbf"
+    },
+    {
+      "path": "processed/Training_2016_Fixed1.prj",
+      "bytes": 401,
+      "sha256": "f9f344bae498c5a85b6f7e9ceedb4e3dd7dfa47db560cb5147e990521319eba3",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_2016_Fixed1.prj"
+    },
+    {
+      "path": "processed/Training_2016_Fixed1.shp",
+      "bytes": 5784,
+      "sha256": "ae3685c59d4b12882b2085320294e22f022cb38ad154b6e58f412c8cb38c9baf",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_2016_Fixed1.shp"
+    },
+    {
+      "path": "processed/Training_2016_Fixed1.shx",
+      "bytes": 1724,
+      "sha256": "85239ed4fecfb3f52253824453ced0708e327024e55f64ba10c3c917692b6c15",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_2016_Fixed1.shx"
+    },
+    {
+      "path": "processed/training_2022_fixed.csv",
+      "bytes": 3582,
+      "sha256": "e7408fca8bdc39c7b48e1a78b14e3c8137a056a683aabc245499ad875c12c11d",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/training_2022_fixed.csv"
+    },
+    {
+      "path": "processed/Training_Fixed_1.dbf",
+      "bytes": 3626,
+      "sha256": "3410e772f93d9970ba149731dd248ec6b863348335cc9e185455f9537adb80f1",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_Fixed_1.dbf"
+    },
+    {
+      "path": "processed/Training_Fixed_1.prj",
+      "bytes": 401,
+      "sha256": "f9f344bae498c5a85b6f7e9ceedb4e3dd7dfa47db560cb5147e990521319eba3",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_Fixed_1.prj"
+    },
+    {
+      "path": "processed/Training_Fixed_1.shp",
+      "bytes": 4804,
+      "sha256": "10ca8519b1fbbc6e8e8c981d34387c5fcba3801f52412e4e7ee33100113ae612",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_Fixed_1.shp"
+    },
+    {
+      "path": "processed/Training_Fixed_1.shx",
+      "bytes": 1444,
+      "sha256": "adf391f13de3903925bdb1537f3f9e37f670e6009daf4da6b863c9405e5d2a8d",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/processed/Training_Fixed_1.shx"
+    },
+    {
+      "path": "shapefiles/Hyderabad/ghmc-wards.geojson",
+      "bytes": 235833,
+      "sha256": "3c712275f2faa324a21e458767a243afc88f6d1d2f715ca495ea9cca2fea8bd1",
+      "kaggle_name": "ankit _prajapati_cc25mtech11005_project/ankit _prajapati_cc25mtech11005_project/shapefiles/Hyderabad/ghmc-wards.geojson"
+    }
+  ]
+}

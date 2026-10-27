@@ -1,0 +1,3599 @@
+{
+  "created_utc": "2026-10-26T05:26:52.445073+00:00",
+  "analysis": "Two selected Landsat daytime surface-temperature observations, not a seven-year time series or rural-reference UHI intensity",
+  "ward_features": 145,
+  "invalid_geometries_repaired": 0,
+  "reference_grid": {
+    "crs": "EPSG:32644",
+    "width": 1235,
+    "height": 995,
+    "transform": [
+      30.0,
+      0.0,
+      210165.0,
+      0.0,
+      -30.0,
+      1943475.0
+    ],
+    "pixel_area_m2": 900.0,
+    "roi_pixels": 610996,
+    "pixel_assignment": "pixel centre; last polygon wins at overlaps"
+  },
+  "config": {
+    "seed": 42,
+    "n_trees": 200,
+    "block_size_m": 1000,
+    "buffer_m": 300,
+    "n_spatial_folds": 5,
+    "qa_pixel_rejected_bits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "qa_radsat_rule": "reject nonzero",
+    "resampling": "nearest",
+    "features": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir1",
+      "ndvi",
+      "ndbi"
+    ],
+    "class_names_from_original_report": {
+      "1": "Water",
+      "2": "Vegetation",
+      "3": "Bare land",
+      "4": "Urban low density",
+      "5": "Urban high density"
+    }
+  },
+  "scenes": {
+    "2016": {
+      "id": "LC08_L2SP_144048_20160523_20200906_02_T1",
+      "metadata": {
+        "SPACECRAFT_ID": "LANDSAT_8",
+        "SENSOR_ID": "OLI_TIRS",
+        "WRS_TYPE": "2",
+        "WRS_PATH": "144",
+        "WRS_ROW": "48",
+        "NADIR_OFFNADIR": "NADIR",
+        "TARGET_WRS_PATH": "144",
+        "TARGET_WRS_ROW": "48",
+        "DATE_ACQUIRED": "2016-05-23",
+        "SCENE_CENTER_TIME": "05:09:17.4375380Z",
+        "STATION_ID": "LGN",
+        "CLOUD_COVER": "0.05",
+        "CLOUD_COVER_LAND": "0.05",
+        "IMAGE_QUALITY_OLI": "9",
+        "IMAGE_QUALITY_TIRS": "9",
+        "SATURATION_BAND_1": "N",
+        "SATURATION_BAND_2": "N",
+        "SATURATION_BAND_3": "N",
+        "SATURATION_BAND_4": "N",
+        "SATURATION_BAND_5": "N",
+        "SATURATION_BAND_6": "Y",
+        "SATURATION_BAND_7": "Y",
+        "SATURATION_BAND_8": "N",
+        "SATURATION_BAND_9": "N",
+        "ROLL_ANGLE": "-0.001",
+        "SUN_AZIMUTH": "77.78584018",
+        "SUN_ELEVATION": "67.43787807",
+        "EARTH_SUN_DISTANCE": "1.0125399",
+        "TRUNCATION_OLI": "UPPER",
+        "TIRS_SSM_MODEL": "FINAL",
+        "TIRS_SSM_POSITION_STATUS": "ESTIMATED"
+      },
+      "quality": {
+        "roi_pixels": 610996,
+        "clear_pixels": 594060,
+        "optical_valid_pixels": 594060,
+        "lst_valid_pixels": 594060,
+        "st_scale": 0.00341802,
+        "st_offset_k": 149.0
+      },
+      "lst_c_all_valid": {
+        "n": 594060,
+        "min": 25.931840896606445,
+        "max": 49.488834381103516,
+        "mean": 38.60809326171875,
+        "median": 38.80068588256836,
+        "p10": 34.84261703491211,
+        "p90": 41.95573043823242
+      },
+      "lst_c_paired": {
+        "n": 591749,
+        "min": 25.931840896606445,
+        "max": 49.488834381103516,
+        "mean": 38.61545944213867,
+        "median": 38.80410385131836,
+        "p10": 34.85628890991211,
+        "p90": 41.95551681518555
+      },
+      "st_uncertainty_k": {
+        "n": 594060,
+        "min": 2.2800000000000002,
+        "max": 7.46,
+        "mean": 3.343574773591893,
+        "median": 3.2600000000000002,
+        "p10": 2.54,
+        "p90": 4.0600000000000005
+      }
+    },
+    "2022": {
+      "id": "LC08_L2SP_144048_20220524_20220602_02_T1",
+      "metadata": {
+        "SPACECRAFT_ID": "LANDSAT_8",
+        "SENSOR_ID": "OLI_TIRS",
+        "WRS_TYPE": "2",
+        "WRS_PATH": "144",
+        "WRS_ROW": "48",
+        "NADIR_OFFNADIR": "NADIR",
+        "TARGET_WRS_PATH": "144",
+        "TARGET_WRS_ROW": "48",
+        "DATE_ACQUIRED": "2022-05-24",
+        "SCENE_CENTER_TIME": "05:09:36.8670040Z",
+        "STATION_ID": "LGN",
+        "CLOUD_COVER": "0.19",
+        "CLOUD_COVER_LAND": "0.19",
+        "IMAGE_QUALITY_OLI": "9",
+        "IMAGE_QUALITY_TIRS": "9",
+        "SATURATION_BAND_1": "N",
+        "SATURATION_BAND_2": "N",
+        "SATURATION_BAND_3": "N",
+        "SATURATION_BAND_4": "N",
+        "SATURATION_BAND_5": "N",
+        "SATURATION_BAND_6": "Y",
+        "SATURATION_BAND_7": "Y",
+        "SATURATION_BAND_8": "N",
+        "SATURATION_BAND_9": "N",
+        "ROLL_ANGLE": "-0.001",
+        "SUN_AZIMUTH": "77.49730314",
+        "SUN_ELEVATION": "67.48937011",
+        "EARTH_SUN_DISTANCE": "1.0126081",
+        "TRUNCATION_OLI": "UPPER",
+        "TIRS_SSM_MODEL": "FINAL",
+        "TIRS_SSM_POSITION_STATUS": "ESTIMATED"
+      },
+      "quality": {
+        "roi_pixels": 610996,
+        "clear_pixels": 603971,
+        "optical_valid_pixels": 603971,
+        "lst_valid_pixels": 603971,
+        "st_scale": 0.00341802,
+        "st_offset_k": 149.0
+      },
+      "lst_c_all_valid": {
+        "n": 603971,
+        "min": 29.46607208251953,
+        "max": 56.60857009887695,
+        "mean": 45.91899108886719,
+        "median": 45.9204216003418,
+        "p10": 43.42184829711914,
+        "p90": 48.70952606201172
+      },
+      "lst_c_paired": {
+        "n": 591749,
+        "min": 31.745891571044922,
+        "max": 56.60857009887695,
+        "mean": 46.011993408203125,
+        "median": 45.9614372253418,
+        "p10": 43.534645080566406,
+        "p90": 48.73686981201172
+      },
+      "st_uncertainty_k": {
+        "n": 603971,
+        "min": 2.7,
+        "max": 8.77,
+        "mean": 3.2272416556424064,
+        "median": 3.0100000000000002,
+        "p10": 2.75,
+        "p90": 3.89
+      }
+    }
+  },
+  "paired_lst_delta_c": {
+    "n": 591749,
+    "min": -9.90200424194336,
+    "max": 23.96031951904297,
+    "mean": 7.396530628204346,
+    "median": 7.386341094970703,
+    "p10": 4.15972900390625,
+    "p90": 10.565101623535156
+  },
+  "training_provenance": {
+    "2016": {
+      "year": 2016,
+      "source_points": 203,
+      "retained_points": 157,
+      "missing_labels": 5,
+      "qa_rejected": 41,
+      "crs": "EPSG:32644",
+      "csv_band_mapping_verified_exactly": {
+        "SAMPLE_1": "SR_B2",
+        "SAMPLE_2": "SR_B3",
+        "SAMPLE_3": "SR_B4",
+        "SAMPLE_4": "SR_B5",
+        "SAMPLE_5": "SR_B6",
+        "SAMPLE_6": "ST_B10"
+      },
+      "class_counts": {
+        "2": 32,
+        "3": 48,
+        "4": 39,
+        "5": 38
+      },
+      "duplicate_coordinates": 0
+    },
+    "2022": {
+      "year": 2022,
+      "source_points": 168,
+      "retained_points": 161,
+      "missing_labels": 1,
+      "qa_rejected": 6,
+      "crs": "EPSG:32644",
+      "csv_band_mapping_verified_exactly": {
+        "SAMPLE_1": "SR_B4",
+        "SAMPLE_2": "SR_B3",
+        "SAMPLE_3": "SR_B2"
+      },
+      "class_counts": {
+        "1": 25,
+        "2": 27,
+        "3": 29,
+        "4": 41,
+        "5": 39
+      },
+      "duplicate_coordinates": 0
+    }
+  },
+  "legacy_random_split_reproduction": {
+    "2016": {
+      "rows_before": 203,
+      "rows_after_required_cleanup": 198,
+      "rows_after_old_blanket_dropna": 0,
+      "n_features": 6,
+      "split": "unstratified_random_80_20_seed42",
+      "warning": "Row holdout on manually sampled points; not independent map accuracy",
+      "n_test": 40,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "per_class": {
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 7.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 7.0
+        },
+        "3": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "4": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 11.0
+        },
+        "5": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        }
+      }
+    },
+    "2022": {
+      "rows_before": 168,
+      "rows_after_required_cleanup": 167,
+      "rows_after_old_blanket_dropna": 0,
+      "n_features": 3,
+      "split": "unstratified_random_80_20_seed42",
+      "warning": "Row holdout on manually sampled points; not independent map accuracy",
+      "n_test": 34,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      "per_class": {
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 9.0
+        },
+        "2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "3": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 4.0
+        },
+        "4": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "5": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 6.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 34.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 34.0
+        }
+      }
+    }
+  },
+  "evaluation": {
+    "2016": {
+      "n_samples": 157,
+      "n_groups": 9,
+      "block_size_m": 1000,
+      "buffer_m": 300,
+      "duplicate_feature_rows": 102,
+      "summaries": [
+        {
+          "split": "random",
+          "model": "majority",
+          "fold_macro_f1_mean": 0.09523809523809523,
+          "fold_macro_f1_std": 0.0,
+          "n_test": 32,
+          "accuracy": 0.3125,
+          "macro_f1": 0.09523809523809523,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 0.3125,
+              "recall": 1.0,
+              "f1-score": 0.47619047619047616,
+              "support": 10.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "accuracy": 0.3125,
+            "macro avg": {
+              "precision": 0.0625,
+              "recall": 0.2,
+              "f1-score": 0.09523809523809523,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.09765625,
+              "recall": 0.3125,
+              "f1-score": 0.1488095238095238,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "random",
+          "model": "random_forest",
+          "fold_macro_f1_mean": 0.8,
+          "fold_macro_f1_std": 0.0,
+          "n_test": 32,
+          "accuracy": 1.0,
+          "macro_f1": 0.8,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 10.0
+            },
+            "4": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.8,
+              "recall": 0.8,
+              "f1-score": 0.8,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "model": "majority",
+          "fold_macro_f1_mean": 0.0,
+          "fold_macro_f1_std": 0.0,
+          "n_test": 157,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              38,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 48.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 157.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 157.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "model": "random_forest",
+          "fold_macro_f1_mean": 0.07449777337951509,
+          "fold_macro_f1_std": 0.09143839039506417,
+          "n_test": 157,
+          "accuracy": 0.267515923566879,
+          "macro_f1": 0.13125,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              32,
+              0
+            ],
+            [
+              0,
+              0,
+              42,
+              0,
+              6
+            ],
+            [
+              0,
+              39,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              38,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "3": {
+              "precision": 0.525,
+              "recall": 0.875,
+              "f1-score": 0.65625,
+              "support": 48.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            },
+            "accuracy": 0.267515923566879,
+            "macro avg": {
+              "precision": 0.10500000000000001,
+              "recall": 0.175,
+              "f1-score": 0.13125,
+              "support": 157.0
+            },
+            "weighted avg": {
+              "precision": 0.1605095541401274,
+              "recall": 0.267515923566879,
+              "f1-score": 0.20063694267515925,
+              "support": 157.0
+            }
+          }
+        }
+      ],
+      "folds": [
+        {
+          "split": "random",
+          "fold": 0,
+          "model": "majority",
+          "n_train": 125,
+          "missing_training_classes": [
+            1
+          ],
+          "n_test": 32,
+          "accuracy": 0.3125,
+          "macro_f1": 0.09523809523809523,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 0.3125,
+              "recall": 1.0,
+              "f1-score": 0.47619047619047616,
+              "support": 10.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "accuracy": 0.3125,
+            "macro avg": {
+              "precision": 0.0625,
+              "recall": 0.2,
+              "f1-score": 0.09523809523809523,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.09765625,
+              "recall": 0.3125,
+              "f1-score": 0.1488095238095238,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "random",
+          "fold": 0,
+          "model": "random_forest",
+          "n_train": 125,
+          "missing_training_classes": [
+            1
+          ],
+          "n_test": 32,
+          "accuracy": 1.0,
+          "macro_f1": 0.8,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              10,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 10.0
+            },
+            "4": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 0.8,
+              "recall": 0.8,
+              "f1-score": 0.8,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 0,
+          "model": "majority",
+          "n_train": 118,
+          "missing_training_classes": [
+            1,
+            4
+          ],
+          "n_test": 39,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 0,
+          "model": "random_forest",
+          "n_train": 118,
+          "missing_training_classes": [
+            1,
+            4
+          ],
+          "n_test": 39,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              39,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 1,
+          "model": "majority",
+          "n_train": 119,
+          "missing_training_classes": [
+            1,
+            5
+          ],
+          "n_test": 38,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              38,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 1,
+          "model": "random_forest",
+          "n_train": 119,
+          "missing_training_classes": [
+            1,
+            5
+          ],
+          "n_test": 38,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              38,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 38.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 2,
+          "model": "majority",
+          "n_train": 125,
+          "missing_training_classes": [
+            1,
+            2
+          ],
+          "n_test": 32,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 2,
+          "model": "random_forest",
+          "n_train": 125,
+          "missing_training_classes": [
+            1,
+            2
+          ],
+          "n_test": 32,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              32,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 3,
+          "model": "majority",
+          "n_train": 124,
+          "missing_training_classes": [
+            1
+          ],
+          "n_test": 24,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 24.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 24.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 3,
+          "model": "random_forest",
+          "n_train": 124,
+          "missing_training_classes": [
+            1
+          ],
+          "n_test": 24,
+          "accuracy": 0.7916666666666666,
+          "macro_f1": 0.17674418604651163,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              19,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 1.0,
+              "recall": 0.7916666666666666,
+              "f1-score": 0.8837209302325582,
+              "support": 24.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.7916666666666666,
+            "macro avg": {
+              "precision": 0.2,
+              "recall": 0.15833333333333333,
+              "f1-score": 0.17674418604651163,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 0.7916666666666666,
+              "f1-score": 0.8837209302325583,
+              "support": 24.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 4,
+          "model": "majority",
+          "n_train": 125,
+          "missing_training_classes": [
+            1
+          ],
+          "n_test": 24,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 24.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 24.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 4,
+          "model": "random_forest",
+          "n_train": 125,
+          "missing_training_classes": [
+            1
+          ],
+          "n_test": 24,
+          "accuracy": 0.9583333333333334,
+          "macro_f1": 0.19574468085106383,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              23,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 1.0,
+              "recall": 0.9583333333333334,
+              "f1-score": 0.9787234042553191,
+              "support": 24.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.9583333333333334,
+            "macro avg": {
+              "precision": 0.2,
+              "recall": 0.19166666666666668,
+              "f1-score": 0.19574468085106383,
+              "support": 24.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 0.9583333333333334,
+              "f1-score": 0.9787234042553191,
+              "support": 24.0
+            }
+          }
+        }
+      ]
+    },
+    "2022": {
+      "n_samples": 161,
+      "n_groups": 12,
+      "block_size_m": 1000,
+      "buffer_m": 300,
+      "duplicate_feature_rows": 52,
+      "summaries": [
+        {
+          "split": "random",
+          "model": "majority",
+          "fold_macro_f1_mean": 0.07804878048780488,
+          "fold_macro_f1_std": 0.0,
+          "n_test": 33,
+          "accuracy": 0.24242424242424243,
+          "macro_f1": 0.07804878048780488,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 5.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 6.0
+            },
+            "4": {
+              "precision": 0.24242424242424243,
+              "recall": 1.0,
+              "f1-score": 0.3902439024390244,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "accuracy": 0.24242424242424243,
+            "macro avg": {
+              "precision": 0.048484848484848485,
+              "recall": 0.2,
+              "f1-score": 0.07804878048780488,
+              "support": 33.0
+            },
+            "weighted avg": {
+              "precision": 0.05876951331496786,
+              "recall": 0.24242424242424243,
+              "f1-score": 0.09460458240946046,
+              "support": 33.0
+            }
+          }
+        },
+        {
+          "split": "random",
+          "model": "random_forest",
+          "fold_macro_f1_mean": 1.0,
+          "fold_macro_f1_std": 0.0,
+          "n_test": 33,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 5.0
+            },
+            "2": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 6.0
+            },
+            "4": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 33.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 33.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "model": "majority",
+          "fold_macro_f1_mean": 0.0,
+          "fold_macro_f1_std": 0.0,
+          "n_test": 161,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              11,
+              12,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              5,
+              22
+            ],
+            [
+              0,
+              0,
+              0,
+              29,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              40
+            ],
+            [
+              0,
+              0,
+              20,
+              19,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 25.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 27.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 29.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 41.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 161.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 161.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "model": "random_forest",
+          "fold_macro_f1_mean": 0.15555555555555553,
+          "fold_macro_f1_std": 0.07825251938515115,
+          "n_test": 161,
+          "accuracy": 0.18012422360248448,
+          "macro_f1": 0.2253968253968254,
+          "confusion_matrix": [
+            [
+              25,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              22,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              29,
+              0
+            ],
+            [
+              0,
+              32,
+              9,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              39,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 25.0
+            },
+            "2": {
+              "precision": 0.1111111111111111,
+              "recall": 0.14814814814814814,
+              "f1-score": 0.12698412698412698,
+              "support": 27.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 29.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 41.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 39.0
+            },
+            "accuracy": 0.18012422360248448,
+            "macro avg": {
+              "precision": 0.22222222222222224,
+              "recall": 0.22962962962962963,
+              "f1-score": 0.2253968253968254,
+              "support": 161.0
+            },
+            "weighted avg": {
+              "precision": 0.17391304347826086,
+              "recall": 0.18012422360248448,
+              "f1-score": 0.17657497781721385,
+              "support": 161.0
+            }
+          }
+        }
+      ],
+      "folds": [
+        {
+          "split": "random",
+          "fold": 0,
+          "model": "majority",
+          "n_train": 128,
+          "missing_training_classes": [],
+          "n_test": 33,
+          "accuracy": 0.24242424242424243,
+          "macro_f1": 0.07804878048780488,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 5.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 6.0
+            },
+            "4": {
+              "precision": 0.24242424242424243,
+              "recall": 1.0,
+              "f1-score": 0.3902439024390244,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "accuracy": 0.24242424242424243,
+            "macro avg": {
+              "precision": 0.048484848484848485,
+              "recall": 0.2,
+              "f1-score": 0.07804878048780488,
+              "support": 33.0
+            },
+            "weighted avg": {
+              "precision": 0.05876951331496786,
+              "recall": 0.24242424242424243,
+              "f1-score": 0.09460458240946046,
+              "support": 33.0
+            }
+          }
+        },
+        {
+          "split": "random",
+          "fold": 0,
+          "model": "random_forest",
+          "n_train": 128,
+          "missing_training_classes": [],
+          "n_test": 33,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 5.0
+            },
+            "2": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 6.0
+            },
+            "3": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 6.0
+            },
+            "4": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 8.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 33.0
+            },
+            "weighted avg": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 33.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 0,
+          "model": "majority",
+          "n_train": 116,
+          "missing_training_classes": [
+            3
+          ],
+          "n_test": 34,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              29,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 5.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 29.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 34.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 34.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 0,
+          "model": "random_forest",
+          "n_train": 116,
+          "missing_training_classes": [
+            3
+          ],
+          "n_test": 34,
+          "accuracy": 0.11764705882352941,
+          "macro_f1": 0.17777777777777776,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              29,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 1.0,
+              "recall": 0.8,
+              "f1-score": 0.8888888888888888,
+              "support": 5.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 29.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.11764705882352941,
+            "macro avg": {
+              "precision": 0.2,
+              "recall": 0.16,
+              "f1-score": 0.17777777777777776,
+              "support": 34.0
+            },
+            "weighted avg": {
+              "precision": 0.14705882352941177,
+              "recall": 0.11764705882352941,
+              "f1-score": 0.13071895424836602,
+              "support": 34.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 1,
+          "model": "majority",
+          "n_train": 89,
+          "missing_training_classes": [
+            2,
+            4
+          ],
+          "n_test": 32,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 2.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 22.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 1,
+          "model": "random_forest",
+          "n_train": 89,
+          "missing_training_classes": [
+            2,
+            4
+          ],
+          "n_test": 32,
+          "accuracy": 0.0625,
+          "macro_f1": 0.2,
+          "confusion_matrix": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              22,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              8,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 2.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 22.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 8.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0625,
+            "macro avg": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0625,
+              "recall": 0.0625,
+              "f1-score": 0.0625,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 2,
+          "model": "majority",
+          "n_train": 120,
+          "missing_training_classes": [
+            4
+          ],
+          "n_test": 32,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              32
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 2,
+          "model": "random_forest",
+          "n_train": 120,
+          "missing_training_classes": [
+            4
+          ],
+          "n_test": 32,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              31,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 3,
+          "model": "majority",
+          "n_train": 65,
+          "missing_training_classes": [
+            4,
+            5
+          ],
+          "n_test": 32,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              11,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              20,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 11.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 20.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 3,
+          "model": "random_forest",
+          "n_train": 65,
+          "missing_training_classes": [
+            4,
+            5
+          ],
+          "n_test": 32,
+          "accuracy": 0.34375,
+          "macro_f1": 0.2,
+          "confusion_matrix": [
+            [
+              11,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              20,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 11.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 1.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 20.0
+            },
+            "accuracy": 0.34375,
+            "macro avg": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 32.0
+            },
+            "weighted avg": {
+              "precision": 0.34375,
+              "recall": 0.34375,
+              "f1-score": 0.34375,
+              "support": 32.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 4,
+          "model": "majority",
+          "n_train": 103,
+          "missing_training_classes": [
+            5
+          ],
+          "n_test": 31,
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              19,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 12.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 19.0
+            },
+            "accuracy": 0.0,
+            "macro avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 31.0
+            },
+            "weighted avg": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 31.0
+            }
+          }
+        },
+        {
+          "split": "spatial_buffered",
+          "fold": 4,
+          "model": "random_forest",
+          "n_train": 103,
+          "missing_training_classes": [
+            5
+          ],
+          "n_test": 31,
+          "accuracy": 0.3870967741935484,
+          "macro_f1": 0.2,
+          "confusion_matrix": [
+            [
+              12,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              19,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "1": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 12.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "3": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 0.0
+            },
+            "5": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 19.0
+            },
+            "accuracy": 0.3870967741935484,
+            "macro avg": {
+              "precision": 0.2,
+              "recall": 0.2,
+              "f1-score": 0.2,
+              "support": 31.0
+            },
+            "weighted avg": {
+              "precision": 0.3870967741935484,
+              "recall": 0.3870967741935484,
+              "f1-score": 0.3870967741935484,
+              "support": 31.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "exploratory_ward_associations": [
+    {
+      "x": "ndvi_delta_mean",
+      "y": "lst_delta_mean_c",
+      "n_wards": 139,
+      "pearson_r": 0.04757162409875735,
+      "minimum_paired_lst_fraction": 0.8,
+      "interpretation": "Exploratory association; spatial dependence, sampling and scene differences preclude causal attribution"
+    },
+    {
+      "x": "built_fraction_delta",
+      "y": "lst_delta_mean_c",
+      "n_wards": 139,
+      "pearson_r": -0.3935860054619068,
+      "minimum_paired_lst_fraction": 0.8,
+      "interpretation": "Exploratory association; spatial dependence, sampling and scene differences preclude causal attribution"
+    },
+    {
+      "x": "bare_to_built_fraction",
+      "y": "lst_delta_mean_c",
+      "n_wards": 139,
+      "pearson_r": -0.43242179163478583,
+      "minimum_paired_lst_fraction": 0.8,
+      "interpretation": "Exploratory association; spatial dependence, sampling and scene differences preclude causal attribution"
+    }
+  ],
+  "original_processed_grids": {
+    "LULC_FINAL_2016.tif": {
+      "crs": "EPSG:32644",
+      "width": 7681,
+      "height": 7841,
+      "transform": [
+        30.0,
+        0.0,
+        91185.0,
+        0.0,
+        -30.0,
+        2037015.0
+      ],
+      "nodata": 0.0,
+      "count": 1,
+      "dtypes": [
+        "uint8"
+      ]
+    },
+    "Clipped_LST_2016.tif": {
+      "crs": "EPSG:32644",
+      "width": 1233,
+      "height": 993,
+      "transform": [
+        30.0,
+        0.0,
+        210195.0,
+        0.0,
+        -30.0,
+        1943445.0
+      ],
+      "nodata": 0.0,
+      "count": 1,
+      "dtypes": [
+        "float32"
+      ]
+    },
+    "LULC_FINAL_2022.tif": {
+      "crs": "EPSG:32644",
+      "width": 7681,
+      "height": 7841,
+      "transform": [
+        30.0,
+        0.0,
+        91485.0,
+        0.0,
+        -30.0,
+        2037015.0
+      ],
+      "nodata": 0.0,
+      "count": 1,
+      "dtypes": [
+        "uint8"
+      ]
+    },
+    "Clipped_LST_2022.tif": {
+      "crs": "EPSG:32644",
+      "width": 1233,
+      "height": 993,
+      "transform": [
+        30.0,
+        0.0,
+        210195.0,
+        0.0,
+        -30.0,
+        1943445.0
+      ],
+      "nodata": 0.0,
+      "count": 1,
+      "dtypes": [
+        "float32"
+      ]
+    }
+  },
+  "original_processed_lst_ranges": {
+    "2016": {
+      "n": 610995,
+      "min": 21.057743072509766,
+      "max": 49.488834381103516,
+      "mean": 38.38346862792969,
+      "median": 38.70498275756836,
+      "p10": 34.541831970214844,
+      "p90": 41.91791915893555
+    },
+    "2022": {
+      "n": 610995,
+      "min": 29.46607208251953,
+      "max": 56.60857009887695,
+      "mean": 45.80963134765625,
+      "median": 45.8964958190918,
+      "p10": 43.29538345336914,
+      "p90": 48.69585418701172
+    }
+  },
+  "land_cover_status": "Experimental diagnostics only: poor spatial validation and no retained 2016 water labels. Do not use transitions for reliable urban-conversion claims.",
+  "limitations": [
+    "Only two May daytime observations; weather and surface conditions can change between acquisitions",
+    "LST is surface temperature, not two-metre air temperature; no independent ground validation",
+    "Provided ward layer contains 145 features; completeness as a municipal inventory is not established",
+    "Manual training labels are spatially clustered, small and not independently verified",
+    "QA removes every 2016 water training point; conservative masking is retained rather than bypassed",
+    "Thermal data are delivered on a 30 m grid but Landsat 8 TIRS native thermal sampling is 100 m",
+    "ST uncertainty values do not cover all between-scene or modeling uncertainty",
+    "Ward associations are exploratory; no causal conclusion or naive IID significance claim"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "rasterio": "1.5.2",
+    "geopandas": "1.2.0",
+    "pyogrio": "0.13.0",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  }
+}
