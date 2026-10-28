@@ -1,8 +1,8 @@
 # Hyderabad Landsat surface-temperature and land-cover study
 
-A reproducible Python upgrade of the original QGIS/notebook project. It compares **23 May 2016 and 24 May 2022**, aligns the two scenes, applies Landsat quality masks, and summarizes paired surface-temperature pixels across **145 supplied ward features**.
+A Python pipeline for comparing Landsat scenes, with the original QGIS maps and notebooks retained. It compares **23 May 2016 and 24 May 2022**, aligns the two scenes, applies Landsat quality masks, and summarizes paired surface-temperature pixels across **145 supplied ward features**.
 
-The upgrade exposes a substantial model limitation: random row splits achieve 100% accuracy, while spatial holdouts perform poorly. The land-cover models and transition tables remain experimental diagnostics. The temperature workflow uses the USGS Level-2 product independently of the classifier.
+Land-cover evaluation shows a substantial model limitation: random row splits achieve 100% accuracy, while spatial holdouts perform poorly. The land-cover models and transition tables remain experimental diagnostics. The temperature workflow uses the USGS Level-2 product independently of the classifier.
 
 ## Verified results
 
@@ -17,7 +17,7 @@ The upgrade exposes a substantial model limitation: random row splits achieve 10
 | RF spatial out-of-fold accuracy | 26.75% / 18.01% | 1 km blocks, five folds, 300 m training buffer |
 | RF spatial macro F1 | 0.1313 / 0.2254 | Fixed five-class label set |
 
-The original +8.2 °C minimum-temperature and r = -0.81 causal claims are **not reproduced as stated**. Original clipped-raster minima are 21.06 °C and 29.47 °C before the new QA rules. Minima depend on masks and should not anchor a climate claim. No rural-reference UHI intensity, annual trend, or causal driver has been established.
+The two observations do not establish a climate trend or causal driver. Historical clipped-raster minima are 21.06 °C and 29.47 °C before the current QA rules; minima depend on masks and should not anchor a climate claim. No rural-reference UHI intensity has been established.
 
 ![Paired LST observations](results/verified_run/lst_comparison.png)
 
@@ -61,12 +61,12 @@ Outputs include aligned GeoTIFFs, ward statistics, experimental land-cover diagn
 | `src/uhi/pipeline.py` | End-to-end run, manifests and figures |
 | `src/uhi/cli.py` | `fetch`, `sample` and `run` commands |
 
-Read [methods](docs/METHODS.md), [model card](docs/MODEL_CARD.md), [provenance](docs/DATA_PROVENANCE.md), and [Hinglish learning guide](docs/LEARNING_HINGLISH.md). Legacy notebooks remain for historical study with stale outputs cleared. Their full-scene inference cells are superseded by the tested pipeline.
+See the [methods](docs/METHODS.md), [model card](docs/MODEL_CARD.md) and [data provenance](docs/DATA_PROVENANCE.md). Legacy notebooks remain for historical study with stale outputs cleared. Their full-scene inference cells are superseded by the tested pipeline.
 
 ## Scientific scope
 
 LST measures the surface rather than two-metre air temperature. Landsat 8 thermal sampling is natively 100 m even though the delivered grid is 30 m. Two same-season dates still differ in weather, moisture, atmosphere and surface conditions. ST_QA uncertainty rasters describe product uncertainty, not all uncertainty in a between-date comparison.
 
-Manual labels are few and spatially clustered. Several spatial folds lack a class in training. The new QA mask also removes every 2016 water training point. Better independent labels spread across multiple locations per class are required before publishing reliable conversion estimates. No NLP, agent or production-readiness claim is made for this geospatial workflow.
+Manual labels are few and spatially clustered. Several spatial folds lack a class in training. The new QA mask also removes every 2016 water training point. Better independent labels spread across multiple locations per class are required before publishing reliable conversion estimates.
 
 Figure colour limits use paired 2nd/98th percentiles for display; saved temperature values remain unclipped. The difference map uses symmetric limits.

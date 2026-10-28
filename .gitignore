@@ -8,3 +8,7 @@ data/downloaded/
 artifacts/
 *.partial
 *.joblib
+
+# Personal study materials
+/docs/*HINGLISH*.md
+/study-notes/
